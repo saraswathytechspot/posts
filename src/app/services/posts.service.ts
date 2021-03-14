@@ -11,6 +11,10 @@ import { Post } from '../models/post';
 
 export class PostsService {
   
+  private readonly _isIdShown = new BehaviorSubject<boolean>(true);
+  private selectedPost = new BehaviorSubject<Post>(null);
+  selectedPostDetails = this.selectedPost.asObservable();
+
   constructor(private readonly http: HttpClient) {  }
 
   fetchPosts() {
@@ -57,5 +61,9 @@ private handleError<T>(operation = 'operation', result?: T) {
           : rows[rows.length - 1].push(key)) && rows
       );
     };
+  }
+
+  updatePostSelection(item) {
+    this.selectedPost.next(item)
   }
 }

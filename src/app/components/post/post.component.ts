@@ -26,6 +26,7 @@ export class PostComponent implements OnInit {
    * Show UserId if Id selected
    */
   handleOnClick():void {
+    this.postsService.updatePostSelection(this.item);
     if (this.isIdShown()) {
       this.showUserId()
     } else {

@@ -11,11 +11,15 @@ As a user I should be able to:
 - When clicking on a square: replace the id with the userId
 - When clicking again show the id
 
-### Branch withState - Updated Post Services to handle all data rendering part. ###
+- On Click of the post, show it details (Added this feature)
+### Branch showDetails - Updated Post Services to handle all data rendering part. ###
 Updated files:
 
--app\services\posts.service.ts
-- app\components\posts.component.ts
+- app\services\posts.service.ts
+- app\components\post-details\post-details.component.ts
+- app\components\posts\posts.component.ts
+- app\components\posts\posts.component.html
+
 
 # Posts
 
