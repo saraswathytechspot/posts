@@ -12,7 +12,7 @@ As a user I should be able to:
 - When clicking again show the id
 
 - On Click of the post, show it details (Added this feature)
-### Branch showDetails - Updated Post Services to handle all data rendering part. ###
+### Branch showDetails - Added Details Component to View details on click of Post. ###
 Updated files:
 
 - app\services\posts.service.ts
