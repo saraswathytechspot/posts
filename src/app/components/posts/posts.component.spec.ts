@@ -27,8 +27,4 @@ describe('PostsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-
-  it('should convert to matrix', () => {  
-    expect(component.convertToMatrix(POSTS).length).toEqual(2)
-  });
 });
