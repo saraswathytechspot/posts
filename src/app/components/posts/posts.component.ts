@@ -14,11 +14,17 @@ export class PostsComponent implements OnInit {
   constructor(private postsService: PostsService) {}
 
   ngOnInit(): void {
+    //Subscribe to the posts and show
     this.postsService.getPosts().subscribe((data) => {
       this.items = this.convertToMatrix(data);
     });
   }
 
+
+  /**
+   * @param  {number} num Number of rows
+   * Generate Rows
+   */
   generateRows(num: number): Function {
     return function (rows, key, index) {
       return (
@@ -29,6 +35,11 @@ export class PostsComponent implements OnInit {
     };
   }
 
+
+  /**
+   * @param  {} list The list data
+   * Convert data to Matrix
+   */
   convertToMatrix(list): Post[] {
     return list.reduce(this.generateRows(10), []);
   }

@@ -2,8 +2,16 @@
     height: 100%;
     padding: 1rem;
     margin: 0;
-
-    fa-icon {
-        color: #ffe975;
+    .icon-container {
+        flex: 1; 
+        text-align: left;
+        fa-icon {
+            color: #ffe975;
+        }
     }
+    .content {
+        text-align: left;
+        margin-top: 0.5rem
+    }
+    
 }

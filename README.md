@@ -1,3 +1,17 @@
+# Display Posts
+
+As a user, I should be able to see list of 100 posts.
+
+## Functional Requirements:
+
+As a user I should be able to:
+
+- Render all posts where each post in a separate component and show them as squares, 10 rows x 10 columns
+- By default, show the post id
+- When clicking on a square: replace the id with the userId
+- When clicking again show the id
+
+
 # Posts
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.

@@ -1,31 +1,25 @@
-<div class="card" (click)="handleOnClick()" *ngIf="item.id">
-    <div>
-        <div style="flex: 1; text-align: left">
+<div class="card" (click)="handleOnClick()" *ngIf="item?.id">
+  <div>
+    <div class="icon-container">
+      <fa-icon [icon]="faUser"></fa-icon>
+    </div>
+    <div class="content">
+      {{ parameterToShow | titlecase }}: {{ item[parameterToShow] }}
+    </div>
+  </div>
+
+  <!-- THIS IS TEMPLATE BASED APPROACH to show by toggle variable-->
+
+  <!-- 
+          <div class="icon-container">
             <fa-icon [icon]="faUser"></fa-icon>
           </div>
-          <div style="text-align: left; margin-top: 0.5rem">
-           {{ parameterToShow | titlecase}}: {{ item[parameterToShow] }}
-          </div>
-    </div>
-
-    <!-- THIS IS TEMPLATE BASED APPROACH -->
-    
-      <!-- <div *ngIf="isIdSelected; else userIdTemplate">
-        <div style="flex: 1; text-align: left">
-          <fa-icon [icon]="faUser"></fa-icon>
-        </div>
-        <div>
-          <div style="text-align: left; margin-top: 0.5rem">ID: {{ item.id }}</div>
-        </div>
-      </div>
-      <ng-template #userIdTemplate>
-        <div style="flex: 1; text-align: left">
-          <fa-icon [icon]="faUser"></fa-icon>
-        </div>
-        <div style="text-align: left; margin-top: 0.5rem">
-          User Id: {{ item.userId }}
-        </div>
+          <div *ngIf="isIdSelected; else userIdTemplate">
+             <div class="content">ID: {{ item.id }}</div>
+         </div>
+      <ng-template #userIdTemplate>    
+        <div class="content">User Id: {{ item.userId }}</div>
       </ng-template> -->
 
-    <!-- THIS IS TEMPLATE BASED APPROACH -->
-    </div>
+  <!-- THIS IS TEMPLATE BASED APPROACH -->
+</div>

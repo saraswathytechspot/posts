@@ -21,9 +21,38 @@ export class PostComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  handleOnClick() {
-    this.isIdSelected = !this.isIdSelected;
-    this.isIdSelected ? this.parameterToShow = 'id': this.parameterToShow = 'userId'
+  /**
+   * Handle on Click of post. Show Id if userId selected.
+   * Show UserId if Id selected
+   */
+  handleOnClick():void {
+    if (this.isIdShown()) {
+      this.showUserId()
+    } else {
+      this.showId()
+    }
+  }
+
+  
+  /**
+   * @returns true if Id is shown currently
+   */
+  isIdShown():boolean {
+    return this.parameterToShow === 'id'
+  }
+
+  /**
+   * Show Id
+   */
+  showId():void {
+    this.parameterToShow = 'id'
+  }
+
+  /**
+   * Show UserId
+   */
+  showUserId():void {
+    this.parameterToShow = 'userId'
   }
 
 }
