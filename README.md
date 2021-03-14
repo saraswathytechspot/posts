@@ -14,7 +14,7 @@ As a user I should be able to:
 ### Branch withState - Updated Post Services to handle all data rendering part. ###
 Updated files:
 
--app\services\posts.service.ts
+- app\services\posts.service.ts
 - app\components\posts.component.ts
 
 # Posts
