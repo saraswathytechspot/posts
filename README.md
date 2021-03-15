@@ -15,6 +15,8 @@ As a user I should be able to:
 
 - Added Basic Unit Testcases
 
+<img src="assets\Screenshot.png">
+
 # Posts
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
