@@ -15,7 +15,7 @@ As a user I should be able to:
 
 - Added Basic Unit Testcases
 
-<img src="assets\Screenshot.png">
+<img src="../src/assets/Screenshot.png">
 
 # Posts
 
