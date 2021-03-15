@@ -11,6 +11,9 @@ As a user I should be able to:
 - When clicking on a square: replace the id with the userId
 - When clicking again show the id
 
+## Non-Functional Requirements:
+
+- Added Basic Unit Testcases
 
 # Posts
 
